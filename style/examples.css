@@ -1,0 +1,326 @@
+:root {
+    --TARSHIM: rgb(87, 87, 87);
+    --TEXT: white;
+    --TIME_R: 3s;
+    --TIME_L: 1s
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.content {
+    min-height: 100vh;
+    width: 98.5vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+nav {
+    width: 99vw;
+    background-color: var(--TARSHIM);
+    font-size: 1.5rem;
+    box-shadow: 0px 5px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.nav {
+    height: 100%;
+    color: var(--TEXT);
+    position: relative;
+}
+
+.nav:hover::before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    height: 1px;
+}
+
+.examples::before {
+    content: "";
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    height: 1px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-evenly;
+    align-content: center;
+    width: 50%;
+    padding: 20px;
+    margin-left: 40%;
+}
+
+.examples {
+    opacity: 0.5;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 6%;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.4%;
+    height: 90vh;
+    margin-top: 1%;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: black;
+    color: white;
+    position: relative;
+}
+
+.cover1:hover .title {
+    height: 100%;
+    position: absolute;
+}
+
+.cover1:hover h2 {
+    z-index: 2;
+    color: black;
+}
+
+.title {
+    width: 100%;
+    min-height: 30%;
+    background-size: cover;
+}
+
+.title-img {
+    height: 100%;
+    background-size: cover;
+
+}
+
+.challenge {
+    background-image: url(../images/shutterstock_581527027.jpg);
+    background-position: 10%;
+}
+
+#challenge {
+    background-position: 100% 70%;
+}
+
+.family {
+    background-image: url(../images/shutterstock_496531180.jpg);
+    background-position: 40%;
+}
+
+#family {
+    background-position: 100% 50%;
+}
+
+.sea {
+    background-image: url(../images/shutterstock_400278007.jpg);
+}
+
+.places {
+    background-image: url(../images/navi.JPG);
+    background-position: 50%;
+}
+
+#places {
+    background-position: 100% 21%;
+}
+
+.view {
+    background-image: url(../images/Ballooning\,_Swakopmund_Namibia_\(3052376323\).jpg);
+}
+
+.green-view {
+    background-image: url(../images/shutterstock_381187558.jpg);
+}
+
+
+.example {
+    height: 94vh;
+    width: 98.5vw;
+    position: relative;
+}
+
+.example .cover {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 10vh;
+    align-items: center;
+    font-size: 2rem;
+    width: 100%;
+}
+
+.example .title {
+    width: 30%;
+    background-position-y: bottom;
+    min-height: 100%;
+}
+
+.img {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: space-between;
+}
+
+img {
+    border-radius: 50%;
+    width: 15vw;
+    height: 15vw;
+    box-shadow: 10px 10px 50px;
+}
+
+a {
+    text-decoration: none;
+
+    z-index: 1;
+}
+
+
+.pas {
+    width: 2px;
+    flex-grow: 1;
+    background-color: black;
+}
+
+.cut {
+    display: none;
+}
+
+.coverImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coverImg1 {
+    height: 52vh;
+}
+
+.coverImg2 {
+    height: 70vh;
+}
+
+.coverImg3 {
+    height: 55vh;
+}
+
+.coverImg4 {
+    height: 75vh;
+}
+
+.coverImg5 {
+    height: 50vh;
+}
+
+.coverImg6 {
+    height: 74vh;
+}
+
+.back {
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    left: 2vw;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 20%;
+    box-shadow: 10px 10px 20px black;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+    gap: 50px;
+}
+
+footer {
+    width: 98.5vw;
+    position: sticky;
+    bottom: 0;
+    background-color: black;
+    color: var(--TEXT);
+    z-index: 1;
+}
+
+@media screen and (max-width: 756px) {
+    .box {
+        width: 100%;
+        margin-left: 0;
+        font-size: 1.15rem;
+    }
+
+
+    main {
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 30px;
+        height: 180vh;
+    }
+
+    .challenge {
+        background-position: 20%;
+    }
+
+    .example {
+        height: 185vh;
+    }
+
+    h1 {
+        margin-top: 22%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .cut {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        grid-column: 1/4;
+        margin-top: 10%;
+    }
+
+    .img {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    img {
+        height: 30vw;
+        width: 30vw;
+
+    }
+
+    .back {
+        font-size: 1.5rem;
+        bottom: 5px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 0;
+        align-items: end;
+    }
+}
