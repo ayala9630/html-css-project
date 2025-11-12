@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/contact.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.4.2-web/css/all.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="background"></div>
+        <nav>
+            <div class="box">
+                <a href="about.html" class="nav about"> אודות</a>
+                <a href="examples.html" class="nav examples"> טעימות</a>
+                <a href="contact.html" class="nav contact"> צור קשר</a>
+                <a href="home.html" class="nav home"> בית</a>
+            </div>
+        </nav>
+        <main>
+            <form action="">
+                <label for="name"> שם מלא </label>
+                <input required id="name" name="name" type="text" class="form">
+                <label for="fromCountry"> ארץ מוצא </label>
+                <input required id="fromCountry" name="fromCountry" type="text" class="form">
+                <label for="toCountry"> יעד </label>
+                <select name="toCountry" class="form">
+                    <option value="1"> ישראל </option>
+                    <option value="1"> שוויץ </option>
+                    <option value="1"> ניו יורק </option>
+                    <option value="1"> הולנד </option>
+                    <option value="1"> המזרח הרחוק </option>
+                    <option value="1"> אחר - ספר לנציג </option>
+
+                </select>
+                <label for="usermail"> כתובת מייל </label>
+                <input required id="usermail" name="usermail" type="email" class="form">
+                <label for="phone"> טלפון </label>
+                <input required id="phone" name="phone" type="text" class="form">
+                <label for="type"> קטגוריה </label>
+                <select name="type" class="form">
+                    <option value="1"> נוף ירוק </option>
+                    <option value="2"> נוף מדברי</option>
+                    <option value="3"> המקומות הקדושים </option>
+                    <option value="4"> ים </option>
+                    <option value="5"> משפחה </option>
+                    <option value="6"> אתגרי </option>
+                </select>
+                <label for="cost"> טווח מחירים </label>
+                <select name="cost" class="form">
+                    <option value="1"> עד 500$ </option>
+                    <option value="2"> 500$-1000$</option>
+                    <option value="3"> מעל 1000$ </option>
+                </select>
+                <label for="note"> הערות </label>
+                <textarea id="note" name="note" rows="5" cols="30"></textarea>
+                <div>
+                    <input id="accept" name="accept" type="checkbox">
+                    <label for="accept"> אני מאשר קבלת הודעות</label>
+                </div>
+                <button type="sumbit"> שלח </button>
+                <input type="reset">
+            </form>
+            <table border="1">
+                <tr>
+                    <th>מחיר</th>
+                    <th>משך הטיול</th>
+                    <th>קטגוריה</th>
+                    <th>עונה בשנה</th>
+                    <th>יעד</th>
+                </tr>
+                <tr>
+                    <td>1200$</td>
+                    <td>שבועיים</td>
+                    <td>נוף ירוק</td>
+                    <td>יולי-אוגוסט</td>
+                    <td>ארופה</td>
+                </tr>
+                <tr>
+                    <td>700$</td>
+                    <td>חמשה ימים</td>
+                    <td>מים</td>
+                    <td>ינואר-אפריל</td>
+                    <td>אירופה</td>
+                </tr>
+                <tr>
+                    <td>1000$</td>
+                    <td>שבוע</td>
+                    <td>המקומות הקדושים</td>
+                    <td>ספטמבר-אוקטובר</td>
+                    <td>ישראל</td>
+                </tr>
+                <tr>
+                    <td>1500$</td>
+                    <td>שבוע</td>
+                    <td>אתגרי</td>
+                    <td>יולי-אוגוסט</td>
+                    <td>שוויץ</td>
+                </tr>
+                <tr>
+                    <td>2000$</td>
+                    <td>שלושה שבועות</td>
+                    <td>ים</td>
+                    <td>נובמבר</td>
+                    <td>המזרח הרחוק</td>
+                </tr>
+                <tr>
+                    <td>600$</td>
+                    <td>יומיים</td>
+                    <td>נוף מדברי</td>
+                    <td>מרץ-אפריל</td>
+                    <td>מצרים</td>
+                </tr>
+                <tr>
+                    <td>400$</td>
+                    <td>יום</td>
+                    <td>משפחה</td>
+                    <td>יולי-אוגוסט</td>
+                    <td>ניו יורק</td>
+                </tr>
+                <tr>
+                    <td>100$</td>
+                    <td>חצי יום</td>
+                    <td>מקומות קדושים</td>
+                    <td>ספטמבר-אוקטובר</td>
+                    <td>ישראל</td>
+                </tr>
+                <tr>
+                    <td>1500$</td>
+                    <td>חודש</td>
+                    <td>ים</td>
+                    <td>פבואר</td>
+                    <td>אוסטרליה</td>
+                </tr>
+            </table>
+        </main>
+        <footer>
+            <hr>
+            <div class="footer">
+                <div>כתובת: הכלנית 14 פתח תקווה <i class="fa-solid fa-home"></i></div>
+                <div>טלפון: 03-6229449 <i class="fa-solid fa-phone"></i></div>
+                <div> tours1@gmail.com :מייל <i class="fa-solid fa-envelope"></i></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
